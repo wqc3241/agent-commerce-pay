@@ -1,0 +1,118 @@
+import type { Product } from '@/types'
+
+export const products: Product[] = [
+  // Electronics
+  {
+    id: 'prod-1',
+    name: 'Wireless Headphones',
+    description: 'Premium noise-cancelling wireless headphones with 30hr battery life',
+    price: 149.99,
+    image: '🎧',
+    category: 'Electronics',
+    inStock: true,
+  },
+  {
+    id: 'prod-2',
+    name: 'Smart Watch',
+    description: 'Fitness tracking smartwatch with heart rate monitor and GPS',
+    price: 199.99,
+    image: '⌚',
+    category: 'Electronics',
+    inStock: true,
+  },
+  {
+    id: 'prod-3',
+    name: 'Portable Charger',
+    description: '20000mAh fast-charging power bank with USB-C',
+    price: 39.99,
+    image: '🔋',
+    category: 'Electronics',
+    inStock: true,
+  },
+  // Clothing
+  {
+    id: 'prod-4',
+    name: 'Denim Jacket',
+    description: 'Classic fit denim jacket with vintage wash',
+    price: 79.99,
+    image: '🧥',
+    category: 'Clothing',
+    inStock: true,
+  },
+  {
+    id: 'prod-5',
+    name: 'Running Shoes',
+    description: 'Lightweight running shoes with responsive cushioning',
+    price: 119.99,
+    image: '👟',
+    category: 'Clothing',
+    inStock: true,
+  },
+  {
+    id: 'prod-6',
+    name: 'Graphic Tee',
+    description: 'Soft cotton graphic t-shirt with modern design',
+    price: 24.99,
+    image: '👕',
+    category: 'Clothing',
+    inStock: true,
+  },
+  // Food & Grocery
+  {
+    id: 'prod-7',
+    name: 'Organic Coffee Beans',
+    description: 'Single-origin arabica coffee beans, medium roast, 1lb bag',
+    price: 18.99,
+    image: '☕',
+    category: 'Food & Grocery',
+    inStock: true,
+  },
+  {
+    id: 'prod-8',
+    name: 'Dark Chocolate Box',
+    description: 'Assorted premium dark chocolates, 12-piece gift box',
+    price: 29.99,
+    image: '🍫',
+    category: 'Food & Grocery',
+    inStock: true,
+  },
+  {
+    id: 'prod-9',
+    name: 'Matcha Powder',
+    description: 'Ceremonial grade Japanese matcha green tea powder, 100g',
+    price: 34.99,
+    image: '🍵',
+    category: 'Food & Grocery',
+    inStock: true,
+  },
+  // Home
+  {
+    id: 'prod-10',
+    name: 'Scented Candle Set',
+    description: 'Set of 3 soy wax candles — lavender, vanilla, and sandalwood',
+    price: 28.99,
+    image: '🕯️',
+    category: 'Home',
+    inStock: true,
+  },
+  {
+    id: 'prod-11',
+    name: 'Desk Lamp',
+    description: 'Adjustable LED desk lamp with 3 brightness levels and warm/cool modes',
+    price: 45.99,
+    image: '💡',
+    category: 'Home',
+    inStock: true,
+  },
+  {
+    id: 'prod-12',
+    name: 'Plant Pot',
+    description: 'Minimalist ceramic plant pot with drainage hole, 6 inch',
+    price: 8.99,
+    image: '🪴',
+    category: 'Home',
+    inStock: true,
+  },
+]
+
+export const categories = [...new Set(products.map((p) => p.category))]
